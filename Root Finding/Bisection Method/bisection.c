@@ -6,7 +6,7 @@
 double bisection(
         double a,
         double b,
-        const double (*f)(double),
+        double (*f)(double),
         const double eps,
         size_t *n,
         const bool silent
