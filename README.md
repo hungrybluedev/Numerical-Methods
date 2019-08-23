@@ -22,7 +22,7 @@ I'll be adding links to the Algorithms as I go on implementing them.
 ### Root Finding
 
 1. [Bisection Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Bisection%20Method)
-2. Regula-Falsi Method
+2. [Regula-Falsi Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Regula-Falsi%20Method)
 
 ## Contact
 
