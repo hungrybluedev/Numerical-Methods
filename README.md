@@ -10,8 +10,8 @@ This repository contains implementations of different numerical algorithms. All 
 2. `cd` into the directory that you want.
 3. Build with CMake.
     - Make sure that you have CMake installed.
-    - From the directory of the implementation, run `mkdir build && cd build`
-    - Run `cmake -G "Unix Makefiles"` ..
+    - From the directory of the implementation, run `mkdir build && cd build` (or whatever you want your build directory to be)
+    - Run `cmake -G "Unix Makefiles" ..`
     - Rune `make`
     - You should have an executable with the same name as the Algorithm. Run it normally as you would on the command line.
 
@@ -23,3 +23,7 @@ I'll be adding links to the Algorithms as I go on implementing them.
 
 1. [Bisection Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Bisection%20Method)
 2. Regula-Falsi Method
+
+## Contact
+
+In case of any problems, you may find me on Twitter ([@HungryBlueDev](https://twitter.com/hungrybluedev)).
