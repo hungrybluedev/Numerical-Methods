@@ -1,4 +1,6 @@
-cmake_minimum_required (2.6)
-project ("Bisection Method")
+cmake_minimum_required(VERSION 3.14)
+project("Bisection Method in C")
 
-add_executable (bisection main.c bisection.c)
+set(CMAKE_C_STANDARD 11)
+
+add_executable(Bisection_Method main.c bisection.c)
