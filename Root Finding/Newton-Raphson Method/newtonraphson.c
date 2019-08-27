@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include <stddef.h>
+#include <stdio.h>
 #include <math.h>
 
 double newton_raphson(
@@ -15,6 +16,10 @@ double newton_raphson(
     while (fabs(f(x)) > eps) {
         x = x - f(x) / f_prime(x);
         (*n)++;
+
+        if (!silent) {
+            printf("%2zu %10.5lf %10.5lf\n", *n, x, f(x));
+        }
     }
     return x;
 }
