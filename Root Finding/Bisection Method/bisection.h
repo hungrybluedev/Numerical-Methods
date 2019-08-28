@@ -16,17 +16,13 @@
  * @param b         The upper bound of the interval to search in.
  * @param f         The function whose zero is sought.
  * @param eps       The permissible error in the final result.
- * @param n         The pointer in which the number of iterations required will be stored.
+ * @param n         The pointer in which the number of iterations required will
+ *                  be stored.
  * @param silent    Should intermediate results be hidden?
- * @return The zero of a function in the given interval when guaranteed it exists.
+ * @return The zero of a function in the given interval when guaranteed it
+ * exists.
  */
-double bisection(
-        double a,
-        double b,
-        double (*f)(double),
-        double eps,
-        size_t *n,
-        bool silent
-);
+double bisection(double a, double b, double (*f)(double), double eps, size_t *n,
+                 bool silent);
 
 #endif
