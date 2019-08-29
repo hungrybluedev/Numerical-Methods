@@ -23,6 +23,20 @@ I'll be adding links to the Algorithms as I go on implementing them.
 
 1. [Bisection Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Bisection%20Method)
 2. [Regula-Falsi Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Regula-Falsi%20Method)
+3. [Secant Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Secant%20Method)
+4. [Newton-Raphson Method](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Root%20Finding/Newton-Raphson%20Method)
+
+### Interpolation
+
+1. Lagrange Interpolation
+2. Newton's method of Forward and Backward Differences
+3. Hermite Interpolation
+
+### Numeric Integration
+
+1. Trapezoidal Rule
+2. Simpson's 1/3rd rule
+3. Simpson's 3/8th rule
 
 ## Contact
 
