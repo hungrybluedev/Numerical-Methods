@@ -28,9 +28,9 @@ I'll be adding links to the Algorithms as I go on implementing them.
 
 ### Interpolation
 
-1. Lagrange Interpolation
-2. Newton's method of Forward and Backward Differences
-3. Hermite Interpolation
+1. [Lagrange Interpolation](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Interpolation/Lagrange%20Polynomial%20Method)
+2. [Newton's method of Forward and Backward Differences](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Interpolation/Newton%20Divided%20Difference)
+3. [Hermite Interpolation](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Interpolation/Hermite%20Interpolation)
 
 ### Numeric Integration
 
