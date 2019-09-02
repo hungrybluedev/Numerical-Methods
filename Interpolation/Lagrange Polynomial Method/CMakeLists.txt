@@ -5,5 +5,4 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Lagrange_Polynomial_Method
         lagrange.c
-        lagrange.h
         main.c)

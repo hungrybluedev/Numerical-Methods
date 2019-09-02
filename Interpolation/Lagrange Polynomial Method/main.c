@@ -53,7 +53,7 @@ void input_point_count(size_t *n) {
   printf("Enter the number of points : ");
   scanf("%zu", n);
 
-  while (*n > N_LIMIT) {
+  while (*n > N_LIMIT || *n == 0) {
     printf("Invalid number of points. Try again.\n");
     printf("Enter the number of points : ");
     scanf("%zu", n);
