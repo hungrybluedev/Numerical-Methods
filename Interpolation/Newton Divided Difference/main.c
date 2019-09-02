@@ -125,9 +125,10 @@ int main() {
   double x = input_x_in_range(min, max);
 
   double ans = newton_interpolate(x, n, data, true);
-  printf("f(%.3lf) = %.5lf\n", x, ans);
+  printf("Forward interpolation:\nf(%.3lf) = %.5lf\n", x, ans);
   ans = newton_interpolate(x, n, data, false);
-  printf("f(%.3lf) = %.5lf\n", x, ans);
+  printf("Backward interpolation:\nf(%.3lf) = %.5lf\n", x, ans);
 
+  free(data);
   return 0;
 }
