@@ -1,5 +1,4 @@
 #include "data.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 static void init_table(size_t m, Data *data, double **y) {

@@ -2,6 +2,8 @@
 #include "hermite.h"
 #include <stdio.h>
 
+
+
 int main() {
     Data data[] = {
         {1.3, 0.6200860, -0.5220232},
