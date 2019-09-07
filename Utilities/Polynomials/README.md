@@ -20,7 +20,7 @@ data can be changed by changing the `print_line` function in `main.c`.
 Here, `f_prime` can be left out if it not necessary.
 
 More adjustments can be made if necessary, like automating the assignement
-of values for `x`. I've left them as is because I have had no need of
+of values for `x`. I've left them as is because I have had no need for
 too many data points yet.
 
 ### 2. Compile
