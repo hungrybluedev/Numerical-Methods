@@ -1,5 +1,9 @@
 # Numerical Methods in C
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hungrybluedev/Numerical-Methods)
+[![GitHub](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/hungrybluedev/Numerical-Methods/blob/master/LICENSE.md)
+![GitHub top language](https://img.shields.io/github/languages/top/hungrybluedev/Numerical-Methods)
+
 ## Introduction
 
 This repository contains implementations of different numerical algorithms. All of the implementation is in C (unfortunately), because our professor is proficient in only that language for some reason. However, I've tried my best to make the implementations as readable and accessible as possible. All of the algorithms are self contained in their own directories with their own CMakeLists.txt.
@@ -41,3 +45,5 @@ I'll be adding links to the Algorithms as I go on implementing them.
 ## Contact
 
 In case of any problems, you may find me on Twitter ([@HungryBlueDev](https://twitter.com/hungrybluedev)).
+
+![Twitter Follow](https://img.shields.io/twitter/follow/hungrybluedev?style=social)
