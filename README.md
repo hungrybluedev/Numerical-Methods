@@ -42,8 +42,12 @@ I'll be adding links to the Algorithms as I go on implementing them.
 2. Simpson's 1/3rd rule
 3. Simpson's 3/8th rule
 
-## Contact
+## Contact and Support
 
 In case of any problems, you may find me on Twitter ([@HungryBlueDev](https://twitter.com/hungrybluedev)).
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/hungrybluedev?style=social)
+
+If you feel that my work has been helpful to you and maybe you're in the mood to give then you may make a small donation to me on PayPal.
+
+[![PayPal - HungryBlueDev](https://img.shields.io/badge/PayPal-HungryBlueDev-blue)](https://www.paypal.me/hungrybluedev)
