@@ -48,6 +48,7 @@ In case of any problems, you may find me on Twitter ([@HungryBlueDev](https://tw
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/hungrybluedev?style=social)
 
-If you feel that my work has been helpful to you and maybe you're in the mood to give then you may make a small donation to me on PayPal.
+If you feel that my work has been helpful to you and maybe you're in the mood to give then you may make a small donation to me on PayPal, or become a regular supporter on Patreon.
 
 [![PayPal - HungryBlueDev](https://img.shields.io/badge/PayPal-HungryBlueDev-blue)](https://www.paypal.me/hungrybluedev)
+[![Become a Patreon!](https://img.shields.io/badge/Patreon-HungryBlueDev-red)](https://www.patreon.com/bePatron?u=24185563)
