@@ -1,7 +1,7 @@
 # Numerical Methods in C
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hungrybluedev/Numerical-Methods)
-[![GitHub](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/hungrybluedev/Numerical-Methods/blob/master/LICENSE.md)
+![GitHub](https://img.shields.io/github/license/hungrybluedev/Numerical-Methods)
 ![GitHub top language](https://img.shields.io/github/languages/top/hungrybluedev/Numerical-Methods)
 
 ## Introduction
