@@ -16,7 +16,7 @@ This repository contains implementations of different numerical algorithms. All 
     - Make sure that you have CMake installed.
     - From the directory of the implementation, run `mkdir build && cd build` (or whatever you want your build directory to be)
     - Run `cmake -G "Unix Makefiles" ..`
-    - Rune `make`
+    - Run `make`
     - You should have an executable with the same name as the Algorithm. Run it normally as you would on the command line.
 
 ## Links to the Algorithms
