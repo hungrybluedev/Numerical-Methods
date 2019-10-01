@@ -1,5 +1,9 @@
 # Numerical Methods in C
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hungrybluedev/Numerical-Methods)
+![GitHub](https://img.shields.io/github/license/hungrybluedev/Numerical-Methods)
+![GitHub top language](https://img.shields.io/github/languages/top/hungrybluedev/Numerical-Methods)
+
 ## Introduction
 
 This repository contains implementations of different numerical algorithms. All of the implementation is in C (unfortunately), because our professor is proficient in only that language for some reason. However, I've tried my best to make the implementations as readable and accessible as possible. All of the algorithms are self contained in their own directories with their own CMakeLists.txt.
@@ -38,6 +42,13 @@ I'll be adding links to the Algorithms as I go on implementing them.
 2. Simpson's 1/3rd rule
 3. Simpson's 3/8th rule
 
-## Contact
+## Contact and Support
 
 In case of any problems, you may find me on Twitter ([@HungryBlueDev](https://twitter.com/hungrybluedev)).
+
+![Twitter Follow](https://img.shields.io/twitter/follow/hungrybluedev?style=social)
+
+If you feel that my work has been helpful to you and maybe you're in the mood to give then you may make a small donation to me on PayPal, or become a regular supporter on Patreon.
+
+[![PayPal - HungryBlueDev](https://img.shields.io/badge/PayPal-HungryBlueDev-blue)](https://www.paypal.me/hungrybluedev)
+[![Become a Patreon!](https://img.shields.io/badge/Patreon-HungryBlueDev-red)](https://www.patreon.com/bePatron?u=24185563)
