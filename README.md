@@ -38,9 +38,9 @@ I'll be adding links to the Algorithms as I go on implementing them.
 
 ### Numeric Integration
 
-1. Trapezoidal Rule
-2. Simpson's 1/3rd rule
-3. Simpson's 3/8th rule
+1. [Trapezoidal Rule](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Integration/Trapezoidal%20Rule)
+2. [Simpson's 1/3rd rule](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Integration/Simpsons%20one-thirds%20Rule)
+3. [Simpson's 3/8th rule](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Integration/Simpsons%20three-eighths%20Rule)
 
 ## Contact and Support
 
