@@ -17,4 +17,4 @@
  */
 double integrate(double (*f)(double), double a, double b, size_t n);
 
-#endif//SIMPSONS_ONE_THIRDS_H
+#endif // SIMPSONS_ONE_THIRDS_H
