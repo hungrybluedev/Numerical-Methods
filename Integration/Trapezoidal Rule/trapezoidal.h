@@ -17,4 +17,4 @@
  */
 double integrate(double (*f)(double), double a, double b, size_t n);
 
-#endif//TRAPEZOIDAL_H
+#endif // TRAPEZOIDAL_H
