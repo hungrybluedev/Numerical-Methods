@@ -4,7 +4,7 @@
 #include <stddef.h>
 
 /**
- * Performs evaluaion of definite integral of the function using
+ * Performs evaluation of definite integral of the function using
  * Simpson's 1/3 rule.
  *
  * NOTE: This function requires b to be bigger than a. It is expected
@@ -13,7 +13,7 @@
  * @param f The function to be integrated.
  * @param a The lower bound of integration.
  * @param b The upper bound of integration.
- * @param n The number of subintervals to use for integration.
+ * @param n The number of sub-intervals to use for integration.
  */
 double integrate(double (*f)(double), double a, double b, size_t n);
 

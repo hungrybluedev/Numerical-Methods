@@ -3,11 +3,14 @@
 #include <math.h>
 #include "trapezoidal.h"
 
+#define DIGITS "10"
+
 // Put the function that you want to integrate in this area.
 double f(double x) {
-    return 1 / (1 + x * x);
+    return 4 / (1 + x * x);
 }
-
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cert-err34-c"
 double get_double() {
     double value;
     scanf("%lf", &value);
@@ -33,7 +36,8 @@ int main() {
 
     double result = integrate(f, a, b, n);
 
-    printf("The result of integration is %lf\n", result);
+    printf("The result of integration is %." DIGITS "lf\n", result);
 
     return 0;
 }
+#pragma clang diagnostic pop
