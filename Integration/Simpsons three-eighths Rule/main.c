@@ -1,14 +1,12 @@
+#include "threeeighths.h"
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include "threeeighths.h"
 
 #define DIGITS "10"
 
 // Put the function that you want to integrate in this area.
-double f(double x) {
-  return 4 / (1 + x * x);
-}
+double f(double x) { return 4 / (1 + x * x); }
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "cert-err34-c"
 double get_double() {

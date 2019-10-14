@@ -17,4 +17,4 @@
  */
 double integrate(double (*f)(double), double a, double b, size_t n);
 
-#endif//SIMPSONS_THREE_EIGHTHS_H
+#endif // SIMPSONS_THREE_EIGHTHS_H
