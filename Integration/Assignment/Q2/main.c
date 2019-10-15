@@ -18,7 +18,7 @@ int main() {
   double b[] = {1, 1.0 / sqrt(2.0)};
   size_t index;
   for (index = 0; index < sizeof(p) / sizeof(f); index++) {
-    size_t n = 3;
+    size_t n = 2;
     double result = integrate(p[index], a[index], b[index], n), last;
     do {
       n += 2;
