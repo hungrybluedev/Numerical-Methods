@@ -6,7 +6,7 @@ void print_matrix(Matrix matrix) {
   size_t i, j;
   for (i = 0; i < matrix.row; i++) {
     for (j = 0; j < matrix.col; j++) {
-      printf("%." DIGITS "lf ", matrix.arr[i][j]);
+      printf("%9." DIGITS "lf ", matrix.arr[i][j]);
     }
     printf("\n");
   }
@@ -47,9 +47,10 @@ char* swap_rows(Matrix matrix, size_t row1, size_t row2) {
 void backward_substitution(Matrix matrix) {
     double *x = malloc(matrix.row * sizeof(double));
 
-    size_t i, j;
+    size_t i = matrix.row - 1, j;
 
-    for (i = matrix.row - 1; i >= 0; i--) {
+    while (i >= 0) {
+        printf("%zu\n", i);
         // Start with the RHS
         x[i] = matrix.arr[i][matrix.col - 1];
         // Subtract all values except the variable sought
@@ -58,6 +59,7 @@ void backward_substitution(Matrix matrix) {
         }
         // Divide by coefficient of variable
         x[i] /= matrix.arr[i][i];
+        i--;
     }
 
     printf("The solutions are:\n");

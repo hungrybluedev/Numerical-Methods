@@ -37,6 +37,8 @@ char* ge_no_pivot(Matrix A) {
     }
   }
 
+  printf("Before BS\n");
   backward_substitution(A);
+  printf("After BS\n");
   return NULL;
 }
