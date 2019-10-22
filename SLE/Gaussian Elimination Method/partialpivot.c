@@ -8,13 +8,25 @@
 static size_t forward_elimination(Matrix A) {
   size_t k;
   for (k = 0; k < A.row; k++) {
+    size_t i, j, r = k;
     double pivot = A.arr[k][k];
+    // Find the largest in the column
+    for (i = k + 1; i < A.row; i++) {
+      if (fabs(A.arr[i][k]) > fabs(pivot)) {
+          pivot = A.arr[i][k];
+          r = i;
+      }
+    }
+
     if (fabs(pivot) < EPS) {
       // Singular matrix
       return k;
     }
 
-    size_t i, j;
+    // Swap with the apprpriate row
+    swap_rows(A, k, r);
+    print_matrix(A);
+
     for (i = k + 1; i < A.row; i++) {
       double f = A.arr[i][k] / pivot;
       for (j = k + 1; j < A.col; j++) {
@@ -26,7 +38,7 @@ static size_t forward_elimination(Matrix A) {
   return A.row;
 }
 
-char* ge_no_pivot(Matrix A) {
+char* ge_part_pivot(Matrix A) {
   size_t rank = forward_elimination(A);
 
   if (rank < A.row) {

@@ -4,6 +4,8 @@
 #define DIGITS "4"
 #define EPS 1e-5
 
+#include <stdlib.h>
+
 typedef struct {
     double** arr;
     size_t row;

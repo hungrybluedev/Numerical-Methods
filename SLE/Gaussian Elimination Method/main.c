@@ -3,7 +3,8 @@
 #include <string.h>
 
 #include "matrix.h"
-#include "nopivot.h"
+// #include "nopivot.h"
+#include "partialpivot.h"
 
 int main() {
   size_t n = 4;
@@ -37,7 +38,10 @@ int main() {
   printf("The matrix entered is:\n");
   print_matrix(A);
 
-  ge_no_pivot(A);
+  char *message = ge_part_pivot(A);
+  if (message) {
+    printf("%s\n", message);
+  }
 
   printf("The matrix after elimination:\n");
   print_matrix(A);
