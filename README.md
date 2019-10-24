@@ -42,6 +42,27 @@ I'll be adding links to the Algorithms as I go on implementing them.
 2. [Simpson's 1/3rd rule](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Integration/Simpsons%20one-thirds%20Rule)
 3. [Simpson's 3/8th rule](https://github.com/hungrybluedev/Numerical-Methods/tree/master/Integration/Simpsons%20three-eighths%20Rule)
 
+### Solving Systems of Linear Equations
+
+### Reference matrix implementation
+
+This includes utility methods for handling the solutions of the system.
+
+[Matrix](https://github.com/hungrybluedev/Numerical-Methods/tree/master/SLE/Matrix)
+
+#### Direct Methods
+
+1. [Gaussian Elimination](https://github.com/hungrybluedev/Numerical-Methods/tree/master/SLE/Gaussian%20Elimination%20Method)
+2. Gauss Jordan Method
+3. LU Decomposition
+
+
+#### Iterative Methods
+
+1. Gauss Jacobi Method
+2. Gauss Seidel Method
+
+
 ## Contact and Support
 
 In case of any problems, you may find me on Twitter ([@HungryBlueDev](https://twitter.com/hungrybluedev)).
