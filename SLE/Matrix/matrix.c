@@ -6,20 +6,23 @@ void print_matrix(Matrix matrix) {
   size_t i, j;
   for (i = 0; i < matrix.row; i++) {
     for (j = 0; j < matrix.col; j++) {
-      printf("%9." DIGITS "lf ", matrix.arr[i][j]);
+      printf("%" WIDTH "." DIGITS "lf ", matrix.arr[i][j]);
     }
     printf("\n");
   }
 }
 
-void input_matrix(Matrix matrix) {
+char* input_matrix(Matrix matrix) {
   size_t i, j;
   for (i = 0; i < matrix.row; i++) {
     for (j = 0; j < matrix.col; j++ ) {
-        printf("%zu, %zu: ", i, j);
-        scanf("%lf", &(matrix.arr[i][j]));
+      printf("%zu, %zu: ", i, j);
+      if (scanf("%lf", &(matrix.arr[i][j])) != 1) {
+        return "Could not read item.";
+      }
     }
   }
+  return NULL;
 }
 
 void free_matrix(Matrix matrix) {
@@ -35,8 +38,14 @@ static char* validate_row(Matrix matrix, size_t row) {
 
 char* swap_rows(Matrix matrix, size_t row1, size_t row2) {
   if (row1 == row2) return NULL;
-  validate_row(matrix, row1);
-  validate_row(matrix, row2);
+
+  char* message;
+  if ((message = validate_row(matrix, row1)) != NULL) {
+      return message;
+  }
+  if ((message = validate_row(matrix, row2)) != NULL) {
+      return message;
+  }
 
   size_t i;
   for (i = 0; i < matrix.col; i++) {
@@ -47,8 +56,20 @@ char* swap_rows(Matrix matrix, size_t row1, size_t row2) {
   return NULL;
 }
 
-void backward_substitution(Matrix matrix) {
+void print_solutions(double* x, size_t count) {
+    printf("The solutions are:\n");
+    size_t i;
+    for (i = 0; i < count; i++) {
+        printf("%zu: %." DIGITS "lf\n", (i + 1), x[i]);
+    }
+}
+
+char* backward_substitution(Matrix matrix) {
     double *x = malloc(matrix.row * sizeof(double));
+
+    if (x == NULL) {
+      return "Could not allocate space for displaying solutions.";
+    }
 
     size_t i = matrix.row - 1, j;
 
@@ -65,10 +86,8 @@ void backward_substitution(Matrix matrix) {
         i--;
     }
 
-    printf("The solutions are:\n");
-    for (i = 0; i < matrix.row; i++) {
-        printf("%zu: %." DIGITS "lf\n", (i + 1), x[i]);
-    }
-
+    print_solutions(x, matrix.row);
     free(x);
+    return NULL;
 }
+
