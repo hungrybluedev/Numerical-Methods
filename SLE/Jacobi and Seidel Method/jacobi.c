@@ -23,7 +23,9 @@ void jacobi(Matrix A, double x[A.row], double tolerance) {
 
   double* y = malloc(A.row * sizeof(double));
   double max_error;
+  size_t n = 0;
   do {
+      n++;
       size_t i, j;
       for (i = 0; i < A.row; i++) {
           double sum = 0;
@@ -46,4 +48,5 @@ void jacobi(Matrix A, double x[A.row], double tolerance) {
           x[i] = y[i];
       }
   } while (max_error > tolerance);
+  printf("Number of iterations : %zu\n", n);
 }

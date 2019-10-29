@@ -3,8 +3,8 @@
 #include <string.h>
 
 #include "matrix.h"
-// #include "jacobi.h"
-#include "seidel.h"
+#include "jacobi.h"
+// #include "seidel.h"
 
 int main() {
   size_t n = 4;
@@ -40,8 +40,8 @@ int main() {
   printf("The matrix entered is:\n");
   print_matrix(A);
 
-//   jacobi(A, x, tolerance);
-  seidel(A, x, tolerance);
+  jacobi(A, x, tolerance);
+//   seidel(A, x, tolerance);
 
   printf("The values are :\n");
   for (i = 0; i < A.row; i++) {

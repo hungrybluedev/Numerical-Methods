@@ -7,7 +7,7 @@
 #include "partialpivot.h"
 
 int main() {
-  size_t n = 4;
+  size_t n = 5;
 //   printf("Enter number of variables : ");
 //   scanf("%zu", &n);
 
@@ -17,11 +17,12 @@ int main() {
 //       arr[i] = malloc((n + 1) * sizeof(double));
 //   }
 
-  double st[4][5] = {
-      {1.19, 2.11, -100, 1, 1.12},
-      {14.2, -0.122, 12.2, -1, 3.44},
-      {0, 100, -99.9, 1, 2.15},
-      {15.3, 0.11, -13.1, -1, 4.16}
+  double st[5][6] = {
+      {1, 1, 1, 1, 1, 0},
+      {0, 1, 2, 3, 4, 0},
+      {0, 1, 4, 9, 16, 1},
+      {0, 1, 8, 27, 64, 0},
+      {0, 1, 16, 81, 256, 0},
   };
 
   double** arr = malloc(n * sizeof(double *));

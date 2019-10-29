@@ -35,6 +35,10 @@ void seidel(Matrix A, double x[A.row], double tolerance) {
         y[i] = fabs(x[i] - temp) / temp;
         x[i] = temp;
       }
+      for (i = 0; i < A.row; i++) {
+          printf("%.4lf ", x[i]);
+      }
+      printf("\n");
       // Check all tolerances now
       max_error = y[0];
       for (i = 1; i < A.row; i++) {
