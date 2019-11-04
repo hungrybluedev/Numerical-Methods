@@ -1,6 +1,6 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 #include "matrix.h"
 #include "nopivot.h"
@@ -13,8 +13,8 @@ static size_t forward_elimination(Matrix A) {
     // Find the largest in the column
     for (i = k + 1; i < A.row; i++) {
       if (fabs(A.arr[i][k]) > fabs(pivot)) {
-          pivot = A.arr[i][k];
-          r = i;
+        pivot = A.arr[i][k];
+        r = i;
       }
     }
 
@@ -23,7 +23,7 @@ static size_t forward_elimination(Matrix A) {
       return k;
     }
 
-    // Swap with the apprpriate row
+    // Swap with the appropriate row
     swap_rows(A, k, r);
     print_matrix(A);
 
@@ -38,7 +38,7 @@ static size_t forward_elimination(Matrix A) {
   return A.row;
 }
 
-char* ge_part_pivot(Matrix A) {
+char *ge_part_pivot(Matrix A) {
   size_t rank = forward_elimination(A);
 
   if (rank < A.row) {

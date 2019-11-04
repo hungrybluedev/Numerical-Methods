@@ -1,6 +1,6 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 #include "matrix.h"
 #include "nopivot.h"
@@ -26,7 +26,7 @@ static size_t forward_elimination(Matrix A) {
   return A.row;
 }
 
-char* ge_no_pivot(Matrix A) {
+char *ge_no_pivot(Matrix A) {
   size_t rank = forward_elimination(A);
 
   if (rank < A.row) {

@@ -12,13 +12,13 @@
  * This struct represents a matrix with arr as the storage,
  * and the specified number of rows and columns.
  *
- * Note that that arr is a double pointer varaiable. So
+ * Note that that arr is a double pointer variable. So
  * ordinary 2D arrays must be converted to double** before use.
  */
 typedef struct {
-    double** arr;
-    size_t row;
-    size_t col;
+  double **arr;
+  size_t row;
+  size_t col;
 } Matrix;
 
 /**
@@ -35,32 +35,40 @@ void print_matrix(Matrix matrix);
  * the error message is returned. If input was successful, a null
  * string is returned.
  */
-char* input_matrix(Matrix matrix);
+char *input_matrix(Matrix matrix);
 
 /**
  * Swaps the rows specified the row offsets. If they are same, there
  * is no effect. If any of the rows exceeds the size of the matrix,
  * a non-null error message is returned. On successful completion,
- * a null string is removed.
+ * a null string is returned.
  */
-char* swap_rows(Matrix matrix, size_t row1, size_t row2);
+char *swap_rows(Matrix matrix, size_t row1, size_t row2);
 
 /**
- * A simple utlility method to print the solutions in the given
+ * Swaps the columns specified the column offsets. If they are same,
+ * there is no effect. If any of the columns exceeds the size of the
+ * matrix, a non-null error message is returned. On successful completion,
+ * a null string is returned.
+ */
+char *swap_cols(Matrix matrix, size_t col1, size_t col2);
+
+/**
+ * A simple utility method to print the solutions in the given
  * pointer array with the number of elements specified by count.
  */
-void print_solutions(double* x, size_t count);
+void print_solutions(double *x, size_t count);
 
 /**
  * When the matrix has been to a row echelon form, this method
  * can be used to solve for the individual variables. It calls
  * the print_solutions(x, count) method.
  */
-char* backward_substitution(Matrix matrix);
+char *backward_substitution(Matrix matrix);
 
 /**
  * Frees the space allocated to the matrix.
  */
 void free_matrix(Matrix matrix);
 
-#endif//MATRIX_H
+#endif // MATRIX_H

@@ -3,4 +3,4 @@ project("Gaussian Elimination in C")
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Gaussian_Elimination main.c nopivot.c partialpivot.c matrix.c)
+add_executable(Gaussian_Elimination main.c nopivot.c partialpivot.c matrix.c fullpivot.c fullpivot.h)

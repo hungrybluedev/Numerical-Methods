@@ -3,6 +3,6 @@
 
 #include "matrix.h"
 
-char* ge_no_pivot(Matrix matrix);
+char *ge_no_pivot(Matrix matrix);
 
-#endif//NO_PIVOT_H
+#endif // NO_PIVOT_H

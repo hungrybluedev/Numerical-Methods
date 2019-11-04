@@ -4,7 +4,8 @@
 
 #include "matrix.h"
 // #include "nopivot.h"
-#include "partialpivot.h"
+//#include "partialpivot.h"
+#include "fullpivot.h"
 
 int main() {
   size_t n = 5;
@@ -39,7 +40,8 @@ int main() {
   printf("The matrix entered is:\n");
   print_matrix(A);
 
-  char *message = ge_part_pivot(A);
+//  char *message = ge_part_pivot(A);
+  char *message = ge_full_pivot(A);
   if (message) {
     printf("%s\n", message);
   }
