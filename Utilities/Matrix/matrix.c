@@ -12,6 +12,8 @@ void print_matrix(Matrix matrix) {
   }
 }
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cert-err34-c"
 char *input_matrix(Matrix matrix) {
   size_t i, j;
   for (i = 0; i < matrix.row; i++) {
@@ -24,6 +26,7 @@ char *input_matrix(Matrix matrix) {
   }
   return NULL;
 }
+#pragma clang diagnostic pop
 
 void free_matrix(Matrix matrix) { free(matrix.arr); }
 
