@@ -4,7 +4,7 @@
 
 #include "matrix.h"
 // #include "nopivot.h"
-//#include "partialpivot.h"
+// #include "partialpivot.h"
 #include "fullpivot.h"
 
 int main() {

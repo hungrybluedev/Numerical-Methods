@@ -5,4 +5,4 @@
 
 char *gauss_jordan(Matrix matrix);
 
-#endif; // GAUSS_JORDAN_H
+#endif // GAUSS_JORDAN_H

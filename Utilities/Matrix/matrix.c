@@ -90,7 +90,7 @@ void print_solutions(double *x, size_t count) {
   printf("The solutions are:\n");
   size_t i;
   for (i = 0; i < count; i++) {
-    printf("%zu: %." DIGITS "lf\n", (i + 1), x[i]);
+    printf("%zu: %+." DIGITS "lf\n", (i + 1), x[i]);
   }
 }
 
