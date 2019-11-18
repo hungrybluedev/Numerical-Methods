@@ -71,4 +71,15 @@ char *backward_substitution(Matrix matrix);
  */
 void free_matrix(Matrix matrix);
 
+/**
+ * Perform matrix multiplication of the given matrices and
+ * store them in the product matrix.
+ * @param M1 THe first multiplicand.
+ * @param M2 The second multiplicand.
+ * @param P The storage matrix for the product.
+ * @return NULL if there are no errors, a non-null string indicating the type of
+ * error otherwise.
+ */
+char *multiply(Matrix M1, Matrix M2, Matrix P);
+
 #endif // MATRIX_H

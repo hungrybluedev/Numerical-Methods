@@ -119,3 +119,23 @@ char *backward_substitution(Matrix matrix) {
   free(x);
   return NULL;
 }
+
+char *multiply(Matrix M1, Matrix M2, Matrix P) {
+  if (M1.col != M2.row) {
+    return "Incompatible matrices.";
+  }
+  if (M1.row != P.row || M2.col != P.col) {
+    return "Product matrix is not of the correct dimension";
+  }
+  size_t i, j, k;
+  for (i = 0; i < M1.row; i++) {
+    for (j = 0; j < M2.col; j++) {
+      double sum = 0;
+      for (k = 0; k < M1.row; k++) {
+        sum += M1.arr[i][k] * M2.arr[k][j];
+      }
+      P.arr[i][j] = sum;
+    }
+  }
+  return NULL;
+}

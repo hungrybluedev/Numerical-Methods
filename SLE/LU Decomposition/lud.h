@@ -1,7 +1,7 @@
 #ifndef LUD_H
 #define LUD_H
 
-#import "matrix.h"
+#include "matrix.h"
 
 char *lu_decompose(Matrix A);
 

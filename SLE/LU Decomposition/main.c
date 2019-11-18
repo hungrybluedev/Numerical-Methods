@@ -6,7 +6,7 @@
 #include "matrix.h"
 
 int main() {
-  size_t n = 5;
+  size_t n = 4;
   //   printf("Enter number of variables : ");
   //   scanf("%zu", &n);
 
@@ -16,9 +16,11 @@ int main() {
   //       arr[i] = malloc((n + 1) * sizeof(double));
   //   }
 
-  double st[5][6] = {
-      {1, 1, 1, 1, 1, 0},   {0, 1, 2, 3, 4, 0},     {0, 1, 4, 9, 16, 1},
-      {0, 1, 8, 27, 64, 0}, {0, 1, 16, 81, 256, 0},
+  double st[4][4] = {
+      {+1.19, +2.11, -100, +1},
+      {+14.2, -0.122, +12.2, -1},
+      {0, +100, -99.9, +1},
+      {15.3, 0.11, -13.1, -1},
   };
 
   double **arr = malloc(n * sizeof(double *));
@@ -27,22 +29,18 @@ int main() {
     arr[i] = st[i];
   }
 
-  Matrix A = {arr, n, n + 1};
+  Matrix A = {arr, n, n};
 
-  //   printf("Enter the coeffcients. The last column is for RHS.\n");
+  //   printf("Enter the coefficients. The last column is for RHS.\n");
   //   input_matrix(A);
 
   printf("The matrix entered is:\n");
   print_matrix(A);
 
-  //  char *message = ge_part_pivot(A);
   char *message = lu_decompose(A);
   if (message) {
     printf("%s\n", message);
   }
-
-  printf("The matrix in RREF:\n");
-  print_matrix(A);
 
   free_matrix(A);
 
