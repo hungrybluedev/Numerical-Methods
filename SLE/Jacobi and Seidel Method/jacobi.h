@@ -5,4 +5,4 @@
 
 void jacobi(Matrix A, double x[A.row], double tolerance);
 
-#endif//JACOBI_H
+#endif // JACOBI_H
